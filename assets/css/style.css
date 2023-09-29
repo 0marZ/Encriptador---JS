@@ -217,3 +217,30 @@ footer{
     }
 
 }
+
+.dark-mode {
+    --light-blue-100: #000000;
+    --dark-blue-300: #0A3871;
+    --dark-gray-500: #495057;
+    --dark-gra-400: #d8dfe8;
+    
+    .box-result-encriptador {
+        background-color: #0a38714a;
+    }
+
+    .box-controls button, .grid-item-3 button{
+        
+        background-color: #343A40;
+        color: white;
+    }
+    .box-controls button:first-child {
+        background-color: var(--dark-blue-300);
+
+    }
+
+    .grid-item-3 textarea {
+        display: none;
+        color: var(--dark-gray-500);
+        background-color: #0a387100;;
+    }
+}

@@ -73,3 +73,19 @@ function showOrHiddenTextOutput(style1, style2){
     outptTextArea.style.display = style2;
     btnCopyResult.style.display = style2;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modoOscuroSwitch = document.getElementById('modoOscuroSwitch');
+    const modoOscuroIcon = document.getElementById('modoOscuroIcon');
+
+    modoOscuroSwitch.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            modoOscuroIcon.src = './assets/svg/sun-regular.svg';
+            modoOscuroIcon.alt = 'Icono Modo Claro';
+        } else {
+            modoOscuroIcon.src = './assets/svg/moon-regular.svg';
+            modoOscuroIcon.alt = 'Icono Modo Oscuro';
+        }
+    });
+});
